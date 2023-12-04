@@ -1,7 +1,7 @@
-import logo from "../../assets/logo.webp";
-import closeIcon from "../../assets/close-icon.webp";
-import hamMenuIcon from "../../assets/ham-menu-icon.webp";
-import header from "../../assets/header.webp";
+import logo from "../assets/logo.webp";
+import closeIcon from "../assets/close-icon.webp";
+import hamMenuIcon from "../assets/ham-menu-icon.webp";
+import header from "../assets/header.webp";
 
 const Header = () => {
   return (

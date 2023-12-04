@@ -1,10 +1,14 @@
-import Header from "./components/Header/Header";
+import Header from "./components/Header";
 import "./App.scss";
+import About from "./components/About";
 
 function App() {
   return (
     <div className="doctorPortal">
-      <Header/>
+      <Header />
+      <main>
+        <About />
+      </main>
     </div>
   );
 }
