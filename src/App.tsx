@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import "./App.scss";
 import About from "./components/About";
+import Banner from "./components/Banner";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <main>
         <About />
+        <Banner />
       </main>
     </div>
   );

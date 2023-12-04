@@ -452,11 +452,11 @@ button[class^="navbar"]:hover {
       from(rgba(0, 80, 213, 0.9)),
       to(rgba(0, 90, 213, 0.85))
     ),
-    url("../images/banner-1-img.png") top/cover no-repeat;
+    url("./assets/banner-1-img.webp") top/cover no-repeat;
   background: -o-linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)),
-    url("../images/banner-1-img.png") top/cover no-repeat;
+    url("./assets/banner-1-img.webp") top/cover no-repeat;
   background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)),
-    url("../images/banner-1-img.png") top/cover no-repeat;
+    url("./assets/banner-1-img.webp") top/cover no-repeat;
   height: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,11 +536,11 @@ button[class^="navbar"]:hover {
       from(rgba(0, 80, 213, 0.9)),
       to(rgba(0, 90, 213, 0.85))
     ),
-    url("../images/banner-two-bg.png") top/cover no-repeat;
+    url("./assets/banner-two-bg.webp") top/cover no-repeat;
   background: -o-linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)),
-    url("../images/banner-two-bg.png") top/cover no-repeat;
+    url("./assets/banner-two-bg.webp") top/cover no-repeat;
   background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)),
-    url("../images/banner-two-bg.png") top/cover no-repeat;
+    url("./assets/banner-two-bg.webp") top/cover no-repeat;
   padding: 13.6rem 0;
 }
 
@@ -622,11 +622,11 @@ button[class^="navbar"]:hover {
       from(rgba(0, 80, 213, 0.85)),
       to(rgba(0, 80, 213, 0.95))
     ),
-    url("../images/package-service-img.jpg") center/cover no-repeat;
+    url("./assets/package-service-img.webp") center/cover no-repeat;
   background: -o-linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)),
-    url("../images/package-service-img.jpg") center/cover no-repeat;
+    url("./assets/package-service-img.webp") center/cover no-repeat;
   background: linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)),
-    url("../images/package-service-img.jpg") center/cover no-repeat;
+    url("./assets/package-service-img.webp") center/cover no-repeat;
 }
 
 .package-service-head {
