@@ -858,7 +858,11 @@ button[class^="navbar"]:hover {
 
 .footer-links {
   border-top: 2px solid var(--dark-gray);
-  padding: 4.5rem 0;
+  padding: 2.5rem 0;
+
+  p {
+    color: #fff;
+  }
 }
 
 .footer-links li {
