@@ -9,10 +9,6 @@ const Footer = () => {
             <div className="icon">
               <img src={logo} />
             </div>
-            <p className="text text-md">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
-              saepe incidunt fugiat optio corporis ea!
-            </p>
           </div>
         </div>
 

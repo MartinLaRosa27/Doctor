@@ -3,6 +3,7 @@ import "./App.scss";
 import About from "./components/About";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
+import Post from "./components/Posts";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <main>
         <About />
         <Banner />
+        <Post />
       </main>
       <Footer />
     </div>
