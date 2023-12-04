@@ -1,67 +1,81 @@
-import { Nav } from "react-bootstrap";
-import headerBg from "../../assets/header-bg.webp";
+import logo from "../../assets/logo.webp";
+import closeIcon from "../../assets/close-icon.webp";
+import hamMenuIcon from "../../assets/ham-menu-icon.webp";
+import header from "../../assets/header.webp";
 
 const Header = () => {
   return (
-    <div className="doctorHeading">
-      <div className="doctorNav">
-        <Nav className="justify-content-end">
-          <Nav.Item>
-            <Nav.Link className="navLink" href="/">
-              Home
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link className="navLink" href="/about">
-              About
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link className="navLink" href="/dentalServices">
-              Dental Services
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link className="navLink" href="/reviews">
-              Reviews
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link className="navLink" href="/dashboard">
-              Doctors Zone
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link className="navLink" href="/contactUs">
-              Contact Us
-            </Nav.Link>
-          </Nav.Item>
-        </Nav>
-      </div>
-      <div className="row mainBody">
-        <div className="col-md-5">
-          <div className="doctorText">
-            <h1>
-              Your New Smile
-              <br />
-              Starts Here
-            </h1>
-            <p>
-              Oral health is a key indicator of overall health, well-being and
-              quality of life. It encompasses a range of diseases and conditions
-              that include dental caries, Periodontal disease, Tooth loss, Oral
-              cancer, Oral manifestations of HIV infection, Oro-dental trauma,
-              Noma and birth defects such as cleft lip and palate.
+    <header className="header bg-blue">
+      <nav className="navbar bg-blue">
+        <div className="container flex">
+          <a href="index.html" className="navbar-brand">
+            <img src={logo} alt="site logo" />
+          </a>
+          <button type="button" className="navbar-show-btn">
+            <img src={hamMenuIcon} />
+          </button>
+
+          <div className="navbar-collapse bg-white">
+            <button type="button" className="navbar-hide-btn">
+              <img src={closeIcon} />
+            </button>
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a href="#" className="nav-link">
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link">
+                  About
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link">
+                  Service
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link">
+                  Doctors
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link">
+                  Departments
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link">
+                  Blog
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div className="header-inner text-white text-center">
+        <div className="container grid">
+          <div className="header-inner-left">
+            <h1>your most trusted</h1>
+            <p className="lead">the best match services for you</p>
+            <p className="text text-md">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              nulla odit esse necessitatibus corporis voluptatem?
             </p>
           </div>
-        </div>
-        <div className="col-md-7">
-          <div className="doctorImg">
-            <img src={headerBg} alt="" />
+          <div className="header-inner-right">
+            <img src={header} />
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

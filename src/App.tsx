@@ -1,4 +1,3 @@
-import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import "./App.scss";
 
@@ -6,7 +5,6 @@ function App() {
   return (
     <div className="doctorPortal">
       <Header/>
-      <Footer />
     </div>
   );
 }
