@@ -4,6 +4,7 @@ const Post = () => {
       <div className="container">
         <div className="section-head">
           <h2>Latest Post</h2>
+          <div className="border-line"></div>
         </div>
         <div className="posts-inner grid">
           <article className="post-item bg-white">
