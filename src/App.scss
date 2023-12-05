@@ -355,7 +355,6 @@ button[class^="navbar"]:hover {
 .header-inner-right {
   margin-top: 6rem;
 }
-
 .header-inner-right img {
   max-width: 520px;
   margin: 0 auto;
@@ -1001,7 +1000,6 @@ button[class^="navbar"]:hover {
   }
 
   .header-inner-right img {
-    position: absolute;
     bottom: 0;
     right: 0;
     padding-left: 5rem;
@@ -1183,11 +1181,12 @@ button[class^="navbar"]:hover {
 
   .header-inner-right {
     width: 100%;
+    display: block;
   }
 
   .header-inner-right img {
     padding-left: 0;
-    max-width: 647px;
+    max-width: 400px;
   }
 
   .services-inner {
@@ -1247,5 +1246,11 @@ button[class^="navbar"]:hover {
   text-align: left;
   @media (max-width: 991px) {
     text-align: center !important;
+  }
+}
+
+.header-inner-right {
+  @media (max-width: 991px) {
+    display: none;
   }
 }

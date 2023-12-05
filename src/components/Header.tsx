@@ -7,6 +7,10 @@ import header from "../assets/header.webp";
 const Header = () => {
   const [show, setShow] = useState<boolean>(true);
 
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
+
   return (
     <header className="header bg-blue">
       <nav className="navbar bg-blue">

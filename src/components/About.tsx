@@ -1,10 +1,8 @@
-import aboutImg from "../assets/about-img.webp";
-
 const About = () => {
   return (
     <section id="about" className="about py">
       <div className="about-inner">
-        <div className="container grid">
+        <div className="container">
           <div className="about-left text-center">
             <div className="section-head">
               <h2>About Us</h2>
@@ -18,11 +16,6 @@ const About = () => {
               nisi, nulla eligendi unde reiciendis quod voluptas velit sit
               voluptate perferendis cum pariatur molestiae tenetur repellat!
             </p>
-          </div>
-          <div className="about-right flex">
-            <div className="img">
-              <img src={aboutImg} />
-            </div>
           </div>
         </div>
       </div>
