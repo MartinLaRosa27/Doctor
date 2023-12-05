@@ -1019,10 +1019,6 @@ button[class^="navbar"]:hover {
     margin-bottom: 0;
   }
 
-  .about-left .section-head h2 {
-    text-align: left;
-  }
-
   .border-line {
     margin-left: 0;
   }
@@ -1245,4 +1241,11 @@ button[class^="navbar"]:hover {
   -webkit-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
+}
+
+.section-head h2 {
+  text-align: left;
+  @media (max-width: 991px) {
+    text-align: center !important;
+  }
 }

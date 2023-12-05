@@ -1,9 +1,12 @@
+import { useState } from "react";
 import logo from "../assets/logo.webp";
 import closeIcon from "../assets/close-icon.webp";
 import hamMenuIcon from "../assets/ham-menu-icon.webp";
 import header from "../assets/header.webp";
 
 const Header = () => {
+  const [show, setShow] = useState<boolean>(true);
+
   return (
     <header className="header bg-blue">
       <nav className="navbar bg-blue">
@@ -11,43 +14,42 @@ const Header = () => {
           <a href="index.html" className="navbar-brand">
             <img src={logo} alt="site logo" />
           </a>
-          <button type="button" className="navbar-show-btn">
+          <button
+            type="button"
+            className="navbar-show-btn"
+            onClick={() => setShow(!show)}
+          >
             <img src={hamMenuIcon} />
           </button>
 
-          <div className="navbar-collapse bg-white">
-            <button type="button" className="navbar-hide-btn">
+          <div
+            className={
+              show
+                ? "navbar-collapse bg-white"
+                : "navbar-collapse bg-white navbar-show"
+            }
+          >
+            <button
+              type="button"
+              className="navbar-hide-btn"
+              onClick={() => setShow(!show)}
+            >
               <img src={closeIcon} />
             </button>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="#home" className="nav-link">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
-                  About
+                <a href="#about" className="nav-link">
+                  About Us
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Service
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Doctors
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Departments
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Blog
+                <a href="#posts" className="nav-link">
+                  Latest Post
                 </a>
               </li>
               <li className="nav-item">
@@ -60,7 +62,7 @@ const Header = () => {
         </div>
       </nav>
 
-      <div className="header-inner text-white text-center">
+      <div className="header-inner text-white text-center" id="home">
         <div className="container grid">
           <div className="header-inner-left">
             <h1>your most trusted</h1>
