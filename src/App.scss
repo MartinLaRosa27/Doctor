@@ -50,6 +50,11 @@ a {
   background-color: var(--fros-blue-color);
 }
 
+.bg-blue-gradient {
+  background: rgb(0,80,213);
+  background: linear-gradient(215deg, rgba(0,80,213,1) 0%, rgba(0,80,213,1) 69%, rgba(0,212,255,1) 100%);
+}
+
 .bg-white {
   background-color: var(--light-color);
 }

@@ -12,7 +12,7 @@ const Header = () => {
   // }, []);
 
   return (
-    <header className="header bg-blue">
+    <header className="header bg-blue-gradient">
       <nav className="navbar bg-blue">
         <div className="container flex">
           <a href="index.html" className="navbar-brand">
