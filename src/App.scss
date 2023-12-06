@@ -51,8 +51,13 @@ a {
 }
 
 .bg-blue-gradient {
-  background: rgb(0,80,213);
-  background: linear-gradient(215deg, rgba(0,80,213,1) 0%, rgba(0,80,213,1) 69%, rgba(0,212,255,1) 100%);
+  background: rgb(0, 80, 213);
+  background: linear-gradient(
+    215deg,
+    rgba(0, 80, 213, 1) 0%,
+    rgba(0, 80, 213, 1) 69%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .bg-white {
@@ -182,7 +187,7 @@ h3 {
 }
 
 .py {
-  padding: 10.9rem 0;
+  padding: 35px 0 25px;
 }
 
 .text-center {
@@ -360,6 +365,7 @@ button[class^="navbar"]:hover {
 .header-inner-right {
   margin-top: 6rem;
 }
+
 .header-inner-right img {
   max-width: 520px;
   margin: 0 auto;
@@ -406,6 +412,7 @@ button[class^="navbar"]:hover {
 .about-left .text {
   margin: 5.6rem 0;
   line-height: 2.3;
+  text-align: center;
 }
 
 .about .btn-white {
@@ -462,7 +469,7 @@ button[class^="navbar"]:hover {
     url("./assets/banner-1-img.webp") top/cover no-repeat;
   background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)),
     url("./assets/banner-1-img.webp") top/cover no-repeat;
-  height: 480px;
+  height: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,9 +482,10 @@ button[class^="navbar"]:hover {
 }
 
 .banner-one .lead {
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 500;
   max-width: 600px;
+  margin-bottom: 10px;
 }
 
 .banner-one .text-sm {
@@ -1249,6 +1257,7 @@ button[class^="navbar"]:hover {
 
 .section-head h2 {
   text-align: left;
+
   @media (max-width: 991px) {
     text-align: center !important;
   }
