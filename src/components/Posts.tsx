@@ -3,7 +3,7 @@ const Post = () => {
     <section id="posts" className="posts py">
       <div className="container">
         <div className="section-head">
-          <h2>Latest Post</h2>
+          <h2>Blog</h2>
           <div className="border-line"></div>
         </div>
         <div className="posts-inner grid">

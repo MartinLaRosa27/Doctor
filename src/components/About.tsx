@@ -5,7 +5,7 @@ const About = () => {
         <div className="container">
           <div className="about-left text-center">
             <div className="section-head">
-              <h2>About Us</h2>
+              <h2>Sobre Mí</h2>
               <div className="border-line"></div>
             </div>
             <p className="text text-lg">

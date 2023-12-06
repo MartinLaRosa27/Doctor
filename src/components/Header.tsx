@@ -15,7 +15,7 @@ const Header = () => {
     <header className="header bg-blue-gradient">
       <nav className="navbar bg-blue">
         <div className="container flex">
-          <a href="index.html" className="navbar-brand">
+          <a href="#home" className="navbar-brand">
             <img src={logo} alt="site logo" />
           </a>
           <button
@@ -48,17 +48,17 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <a href="#about" className="nav-link">
-                  About Us
+                Sobre Mí
                 </a>
               </li>
               <li className="nav-item">
                 <a href="#posts" className="nav-link">
-                  Latest Post
+                  Blog
                 </a>
               </li>
               <li className="nav-item">
                 <a href="#contact" className="nav-link">
-                  Contact
+                  Contacto
                 </a>
               </li>
             </ul>
@@ -69,12 +69,7 @@ const Header = () => {
       <div className="header-inner text-white text-center" id="home">
         <div className="container grid">
           <div className="header-inner-left">
-            <h1>your most trusted</h1>
-            <p className="lead">the best match services for you</p>
-            <p className="text text-md">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              nulla odit esse necessitatibus corporis voluptatem?
-            </p>
+            <p className="lead">Bienvenido a mi espacio virtual dedicado al cuidado de tu salud bucal. Soy la Dr. Schiraldi, un dentista comprometido con ofrecer servicios dentales de alta calidad para mejorar y mantener tu sonrisa.</p>
           </div>
           <div className="header-inner-right">
             <img src={header} />
