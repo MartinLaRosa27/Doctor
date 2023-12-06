@@ -1,4 +1,5 @@
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import { Contact } from "./components/Contact";
 import Header from "./components/Header";
 import About from "./components/About";
 import Banner from "./components/Banner";
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Banner />
         <Post />
+        <Contact/>
       </main>
       <Footer />
       <FloatingWhatsApp
