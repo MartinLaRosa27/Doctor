@@ -7,10 +7,6 @@ import header from "../assets/header.webp";
 const Header = () => {
   const [show, setShow] = useState<boolean>(true);
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
-
   return (
     <header className="header bg-blue-gradient">
       <nav className="navbar bg-blue">
@@ -48,7 +44,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <a href="#about" className="nav-link">
-                Sobre Mí
+                  Sobre Mí
                 </a>
               </li>
               <li className="nav-item">
@@ -69,7 +65,12 @@ const Header = () => {
       <div className="header-inner text-white text-center" id="home">
         <div className="container grid">
           <div className="header-inner-left">
-            <p className="lead">Bienvenido a mi espacio virtual dedicado al cuidado de tu salud bucal. Soy la Dr. Schiraldi, un dentista comprometido con ofrecer servicios dentales de alta calidad para mejorar y mantener tu sonrisa.</p>
+            <p className="lead">
+              Bienvenido a mi espacio virtual dedicado al cuidado de tu salud
+              bucal. Soy la Dr. Schiraldi, un dentista comprometido con ofrecer
+              servicios dentales de alta calidad para mejorar y mantener tu
+              sonrisa.
+            </p>
           </div>
           <div className="header-inner-right">
             <img src={header} />
