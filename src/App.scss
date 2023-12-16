@@ -156,7 +156,6 @@ input {
 
 .lead {
   font-size: 25px;
-  text-transform: capitalize;
 }
 
 h1,
@@ -816,7 +815,7 @@ button[class^="navbar"]:hover {
 
 /* footer */
 .footer {
-  background-color: var(--dark-color);
+  background-color: #96c2d0;
 }
 
 .footer-item {
@@ -888,11 +887,11 @@ button[class^="navbar"]:hover {
 }
 
 .footer-links {
-  border-top: 2px solid var(--dark-gray);
+  border-top: 2px solid var(--dark-color);
   padding: 2.5rem 0;
 
   p {
-    color: #fff;
+    color:var(--dark-color);
   }
 }
 

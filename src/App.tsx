@@ -16,12 +16,12 @@ function App() {
         <About />
         <Banner />
         <Post />
-        <Contact/>
+        <Contact />
       </main>
       <Footer />
       <FloatingWhatsApp
         phoneNumber={import.meta.env.VITE_NUMERO}
-        accountName="Alicia Schiraldi"
+        accountName="Martín La Rosa"
         avatar={perfil}
         statusMessage="En línea"
         chatMessage="¿Hola, como puedo ayudarte?"

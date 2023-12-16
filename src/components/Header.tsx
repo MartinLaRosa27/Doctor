@@ -67,7 +67,7 @@ const Header = () => {
           <div className="header-inner-left">
             <p className="lead">
               Bienvenido a mi espacio virtual dedicado al cuidado de tu salud
-              bucal. Soy la Dr. Schiraldi, un dentista comprometido con ofrecer
+              bucal. Soy el Dr. La Rosa, un dentista comprometido con ofrecer
               servicios dentales de alta calidad para mejorar y mantener tu
               sonrisa.
             </p>
