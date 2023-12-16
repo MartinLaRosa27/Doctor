@@ -1,32 +1,37 @@
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-import { Contact } from "./components/Contact";
-import Header from "./components/Header";
-import About from "./components/About";
-import Banner from "./components/Banner";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Blog } from "./pages/Blog";
 import Footer from "./components/Footer";
-import Post from "./components/Posts";
 import perfil from "./assets/perfil.webp";
 import "./App.scss";
 
 function App() {
   return (
     <div className="doctorPortal">
-      <Header />
-      <main>
-        <About />
-        <Banner />
-        <Post />
-        <Contact />
-      </main>
-      <Footer />
-      <FloatingWhatsApp
-        phoneNumber={import.meta.env.VITE_NUMERO}
-        accountName="Martín La Rosa"
-        avatar={perfil}
-        statusMessage="En línea"
-        chatMessage="¿Hola, como puedo ayudarte?"
-        placeholder="Escribe un mensaje"
-      />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/blog">
+            <Blog />
+          </Route>
+          <Route exact path="*">
+            <Home />
+          </Route>
+        </Switch>
+
+        <Footer />
+        <FloatingWhatsApp
+          phoneNumber={import.meta.env.VITE_NUMERO}
+          accountName="Martín La Rosa"
+          avatar={perfil}
+          statusMessage="En línea"
+          chatMessage="¿Hola, como puedo ayudarte?"
+          placeholder="Escribe un mensaje"
+        />
+      </BrowserRouter>
     </div>
   );
 }

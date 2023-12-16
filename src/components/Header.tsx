@@ -1,19 +1,20 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.webp";
 import closeIcon from "../assets/close-icon.webp";
 import hamMenuIcon from "../assets/ham-menu-icon.webp";
 import header from "../assets/header.webp";
 
-const Header = () => {
+const Header = (props: { home: boolean }) => {
   const [show, setShow] = useState<boolean>(true);
 
   return (
     <header className="header bg-blue-gradient">
       <nav className="navbar bg-blue">
         <div className="container flex">
-          <a href="#home" className="navbar-brand">
+          <NavLink to={`/`} className="navbar-brand">
             <img src={logo} alt="site logo" />
-          </a>
+          </NavLink>
           <button
             type="button"
             className="navbar-show-btn"
@@ -62,21 +63,23 @@ const Header = () => {
         </div>
       </nav>
 
-      <div className="header-inner text-white text-center" id="home">
-        <div className="container grid">
-          <div className="header-inner-left">
-            <p className="lead">
-              Bienvenido a mi espacio virtual dedicado al cuidado de tu salud
-              bucal. Soy el Dr. La Rosa, un dentista comprometido con ofrecer
-              servicios dentales de alta calidad para mejorar y mantener tu
-              sonrisa.
-            </p>
-          </div>
-          <div className="header-inner-right">
-            <img src={header} />
+      {props.home && (
+        <div className="header-inner text-white text-center" id="home">
+          <div className="container grid">
+            <div className="header-inner-left">
+              <p className="lead">
+                Bienvenido a mi espacio virtual dedicado al cuidado de tu salud
+                bucal. Soy el Dr. La Rosa, un dentista comprometido con ofrecer
+                servicios dentales de alta calidad para mejorar y mantener tu
+                sonrisa.
+              </p>
+            </div>
+            <div className="header-inner-right">
+              <img src={header} />
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </header>
   );
 };

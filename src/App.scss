@@ -52,10 +52,12 @@ a {
 
 .bg-blue-gradient {
   background: rgb(0, 80, 213);
-  background: linear-gradient(215deg,
-      rgba(0, 80, 213, 1) 0%,
-      rgba(0, 80, 213, 1) 69%,
-      rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(
+    215deg,
+    rgba(0, 80, 213, 1) 0%,
+    rgba(0, 80, 213, 1) 69%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .bg-white {
@@ -192,12 +194,8 @@ h3 {
 }
 
 /* header */
-.header {
-  min-height: 100vh;
-}
-
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -459,11 +457,13 @@ button[class^="navbar"]:hover {
 
 /* banner one section */
 .banner-one {
-  background: -webkit-gradient(linear,
+  background: -webkit-gradient(
+      linear,
       left top,
       left bottom,
       from(rgba(0, 80, 213, 0.9)),
-      to(rgba(0, 90, 213, 0.85))),
+      to(rgba(0, 90, 213, 0.85))
+    ),
     url("./assets/banner-1-img.webp") center/cover no-repeat;
   height: 200px;
   display: -webkit-box;
@@ -542,11 +542,13 @@ button[class^="navbar"]:hover {
 
 /* banner two section */
 .banner-two {
-  background: -webkit-gradient(linear,
+  background: -webkit-gradient(
+      linear,
       left top,
       left bottom,
       from(rgba(0, 80, 213, 0.9)),
-      to(rgba(0, 90, 213, 0.85))),
+      to(rgba(0, 90, 213, 0.85))
+    ),
     url("./assets/banner-two-bg.webp") top/cover no-repeat;
   background: -o-linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)),
     url("./assets/banner-two-bg.webp") top/cover no-repeat;
@@ -626,11 +628,13 @@ button[class^="navbar"]:hover {
 }
 
 .package-service {
-  background: -webkit-gradient(linear,
+  background: -webkit-gradient(
+      linear,
       left top,
       left bottom,
       from(rgba(0, 80, 213, 0.85)),
-      to(rgba(0, 80, 213, 0.95))),
+      to(rgba(0, 80, 213, 0.95))
+    ),
     url("./assets/package-service-img.webp") center/cover no-repeat;
   background: -o-linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)),
     url("./assets/package-service-img.webp") center/cover no-repeat;
@@ -891,7 +895,7 @@ button[class^="navbar"]:hover {
   padding: 2.5rem 0;
 
   p {
-    color:var(--dark-color);
+    color: var(--dark-color);
   }
 }
 
@@ -1096,7 +1100,6 @@ button[class^="navbar"]:hover {
 }
 
 @media (min-width: 1200px) {
-
   .navbar-show-btn,
   .navbar-hide-btn {
     display: none;
@@ -1237,7 +1240,6 @@ button[class^="navbar"]:hover {
 }
 
 @media (min-width: 1480px) {
-
   /* general */
   .container {
     max-width: 81vw;

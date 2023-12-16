@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Post = () => {
   return (
     <section id="posts" className="posts py">
@@ -77,7 +79,9 @@ const Post = () => {
           </article>
         </div>
 
-        <h3 className="show-more">Ver más</h3>
+        <h3 className="show-more">
+          <NavLink to={`/blog`}>Ver más</NavLink>
+        </h3>
       </div>
     </section>
   );
