@@ -8,13 +8,18 @@ const About = () => {
               <h2>Sobre Mí</h2>
               <div className="border-line"></div>
             </div>
-            <p className="text text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae molestias delectus facilis, temporibus eum consectetur,
-              a debitis exercitationem quae distinctio aliquid ea ipsam vitae
-              esse amet soluta maxime dolorem? Inventore ut maiores illo ipsum
-              nisi, nulla eligendi unde reiciendis quod voluptas velit sit
-              voluptate perferendis cum pariatur molestiae tenetur repellat!
+            <p className="text text-lg" style={{ margin: "2px !important" }}>
+              Desde el principio de mi carrera, he estado dedicado a
+              proporcionar <strong>atención dental de calidad</strong>,
+              centrándome en la comodidad y bienestar de mis pacientes. Aunque
+              no cuento con un consultorio propio, trabajo en asociación con
+              clínicas reconocidas para asegurarme de que recibas la mejor
+              atención posible.
+              <tr /> Con <strong>10 años de experiencia</strong> en el campo
+              dental, he tenido el privilegio de trabajar con una diversidad de
+              pacientes. Mi pasión por la odontología va más allá de las
+              técnicas y procedimientos; se centra en crear una experiencia
+              positiva para cada persona que confía en mi cuidado.
             </p>
           </div>
         </div>

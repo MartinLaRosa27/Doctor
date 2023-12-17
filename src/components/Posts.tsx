@@ -18,7 +18,7 @@ const Post = () => {
               <article
                 key={post.id}
                 className="post-item bg-white"
-                onClick={() => history.push(`/posteo/${1}`)}
+                onClick={() => history.push(`/posteo/${post.id}`)}
               >
                 <div className="content">
                   <h4>{post.titulo}</h4>
