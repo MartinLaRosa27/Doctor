@@ -1,7 +1,10 @@
 import { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import Header from "../components/Header";
 
 export const Blog = () => {
+  let history = useHistory();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -20,7 +23,10 @@ export const Blog = () => {
             <div className="border-line"></div>
           </div>
           <div className="posts-inner grid">
-            <article className="post-item bg-white">
+            <article
+              className="post-item bg-white"
+              onClick={() => history.push(`/posteo/${1}`)}
+            >
               <div className="content">
                 <h4>
                   Inspiring stories of person and family centered care during a

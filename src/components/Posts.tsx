@@ -1,6 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import { postsDB } from "../postsDB";
 
 const Post = () => {
+  let history = useHistory();
+
   return (
     <section id="posts" className="posts py">
       <div className="container">
@@ -9,75 +13,28 @@ const Post = () => {
           <div className="border-line"></div>
         </div>
         <div className="posts-inner grid">
-
-          <article className="post-item bg-white">
-            <div className="content">
-              <h4>
-                Inspiring stories of person and family centered care during a
-                global pandemic.
-              </h4>
-              <p className="text text-sm">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-                voluptas eius recusandae sunt obcaecati esse facere cumque.
-                Aliquid, cupiditate debitis.
-              </p>
-              <p className="text text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                quia ipsam, quis iure sed nulla.
-              </p>
-              <div className="info flex">
-                <small className="text text-sm">
-                  <i className="fas fa-clock"></i> October 27, 2021
-                </small>
-              </div>
-            </div>
-          </article>
-
-          <article className="post-item bg-white">
-            <div className="content">
-              <h4>
-                Inspiring stories of person and family centered care during a
-                global pandemic.
-              </h4>
-              <p className="text text-sm">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-                voluptas eius recusandae sunt obcaecati esse facere cumque.
-                Aliquid, cupiditate debitis.
-              </p>
-              <p className="text text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                quia ipsam, quis iure sed nulla.
-              </p>
-              <div className="info flex">
-                <small className="text text-sm">
-                  <i className="fas fa-clock"></i> October 27, 2021
-                </small>
-              </div>
-            </div>
-          </article>
-
-          <article className="post-item bg-white">
-            <div className="content">
-              <h4>
-                Inspiring stories of person and family centered care during a
-                global pandemic.
-              </h4>
-              <p className="text text-sm">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-                voluptas eius recusandae sunt obcaecati esse facere cumque.
-                Aliquid, cupiditate debitis.
-              </p>
-              <p className="text text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                quia ipsam, quis iure sed nulla.
-              </p>
-              <div className="info flex">
-                <small className="text text-sm">
-                  <i className="fas fa-clock"></i> October 27, 2021
-                </small>
-              </div>
-            </div>
-          </article>
+          {postsDB.slice(0, 3).map((post) => {
+            return (
+              <article
+                key={post.id}
+                className="post-item bg-white"
+                onClick={() => history.push(`/posteo/${1}`)}
+              >
+                <div className="content">
+                  <h4>{post.titulo}</h4>
+                  <p className="text text-sm">
+                    {post.contenido.slice(0, 303)}
+                    {post.contenido.length > 303 && "..."}
+                  </p>
+                  <div className="info flex">
+                    <small className="text text-sm">
+                      <i className="fas fa-clock"></i> {post.fecha}
+                    </small>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
 
         <h3 className="show-more">
