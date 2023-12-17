@@ -10,4 +10,4 @@ HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite / Chat
 
 ### Deploy:
 
-👉 https://larosamartin.com.ar
+👉 https://lrdoctorweb.netlify.app/
