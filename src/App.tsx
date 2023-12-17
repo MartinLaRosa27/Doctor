@@ -5,6 +5,7 @@ import { Blog } from "./pages/Blog";
 import Footer from "./components/Footer";
 import perfil from "./assets/perfil.webp";
 import "./App.scss";
+import { Posteo } from "./pages/Posteo";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           </Route>
           <Route exact path="/blog">
             <Blog />
+          </Route>
+          <Route exact path="/posteo/:id">
+            <Posteo />
           </Route>
           <Route exact path="*">
             <Home />

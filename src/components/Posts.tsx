@@ -9,6 +9,7 @@ const Post = () => {
           <div className="border-line"></div>
         </div>
         <div className="posts-inner grid">
+
           <article className="post-item bg-white">
             <div className="content">
               <h4>
