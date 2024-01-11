@@ -8,10 +8,6 @@ Sitio web de presentación para un especialista en salud.
 
 HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite / ChatGPT
 
-### Deploy:
-
-👉 https://lrdoctorweb.netlify.app/
-
 ### Screenshots:
 
 ![alt text](https://github.com/MartinLaRosa27/Doctor-Web/blob/main/resources/screenshot1.png?raw=true)
